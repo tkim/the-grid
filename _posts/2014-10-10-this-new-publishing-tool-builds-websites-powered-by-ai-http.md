@@ -4,18 +4,22 @@
       name: "WIRED"
       url: "http://twitter.com/WIRED"
       avatar: 
-        src: "https://pbs.twimg.com/profile_images/500140529066049536/gRUXLlRh_bigger.jpeg"
+        src: "https://pbs.twimg.com/profile_images/378800000703426078/f0e0491c473589ad484d976ca45d712b_bigger.png"
         width: 73
         height: 73
         colors: 
           - 
-            - 246
-            - 247
-            - 249
+            - 9
+            - 9
+            - 9
           - 
-            - 242
-            - 60
-            - 59
+            - 91
+            - 91
+            - 91
+          - 
+            - 173
+            - 173
+            - 173
   related: []
   publisher: 
     url: "http://twitter.com"
