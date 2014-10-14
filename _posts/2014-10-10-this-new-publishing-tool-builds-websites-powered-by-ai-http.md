@@ -40,10 +40,10 @@
   description: "This new publishing tool builds websites powered by AI http://wrd.cm/1sgwEwf"
   inLanguage: "English"
   app_links: []
-  isBasedOnUrl: "https://twitter.com/WIRED/status/520266740887203841"
   datePublished: "2014-10-10T02:42:08.174Z"
-  dateModified: "2014-10-10T02:42:08.174Z"
+  dateModified: "2014-10-14T16:57:37.212Z"
   published: true
+  sourcePath: "_posts/2014-10-10-this-new-publishing-tool-builds-websites-powered-by-ai-http.md"
   _type: "Photograph"
   _context: "http://schema.org"
 
