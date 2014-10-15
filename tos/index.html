@@ -1,74 +1,194 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/><meta property="og:image" content="http://s3-us-west-2.amazonaws.com/cdn.thegrid.io/fixtures/images/no_more_zuck.png"/><meta property="og:title" content="The Grid Terms of Service"/><meta property="og:site_name" content="The Grid"/><meta property="og:type" content="website"/><meta property="og:app_id" content="1517733501804443"/><title>The Grid | The Grid Terms of Service</title><style type="text/css">body {
-  font-family: 'Roboto Light', sans-serif;
-  padding: 0 0 50px 0;
-  margin: 0;
-  width: 100%;
-  font-weight: lighter;
-  line-height: 1.75em;
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/><meta property="og:image" content="http://s3-us-west-2.amazonaws.com/cdn.thegrid.io/fixtures/images/no_more_zuck.png"/><meta property="og:title" content="The Grid Terms of Service"/><meta property="og:site_name" content="The Grid"/><meta property="og:type" content="website"/><meta property="og:description"/><title>The Grid | The Grid Terms of Service</title><style type="text/css">html:not(.gss-ready) {
+  opacity:0;
 }
 
-.header {
-  width: 100%;
-  background-image: url(https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/fixtures/images/header.png);
-  height: 144px;
-  background-size: cover;
-  background-position: center;
-  box-shadow: inset 0 0 2em .1em black;
+html {
+  background-color: hsl(210, 0%, 98%);
+  font-family: 'National Regular';
 }
 
-.container {
-  max-width: 940px;
-  padding: 0 80px 0 80px;
-  margin: auto;
+body {
+  -webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+a, p, h1, h2, h3, h4 {
   font-weight: normal;
 }
 
-h1 {
-  font-size: 2.5em;
+* {
+  /*-webkit-backface-visibility: hidden;*/
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  box-sizing: border-box;
 }
 
-h1, h2 {
-  text-align: center;
-  margin: 85px 0 30px 0;
-}
-
-h3 {
-  margin: 0 0 -15px 0;
-}
-
-.back {
+body.modal-open {
+  overflow: hidden;
   position: fixed;
-  top: 50px;
-  left: 12px;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body.modal-open .modal {
+  position: fixed !important;
+  z-index: 10;
+  visibility: visible;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+iframe {
+  border: none;
+  z-index: 2147483600; /* not on top of extension */
+}
+
+.iframer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 2147483600; /* not on top of extension */
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.iframer {
+  position: absolute;
+  top: 72px;
+  left: 72px;
+}
+
+
+.fa.fa-spinner {
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+.iframer-container .closer {
   width: 36px;
   height: 36px;
-  border-radius: 36px;
+  line-height: 32px;
+  border-radius: 24px;
   border: 2px solid #aaa;
   color: #aaa;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  opacity: .5;
+}
+.iframer-container .closer:hover {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.ancillary-header {
+  background-image: url('https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/responsive.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 2em .1em black;
+
+  overflow: visible; /* Allow back button to show */
+  z-index: 2; /* Allow back button to be clickable */
+}
+
+.ancillary-header:before {
+  background: hsla(0, 0%, 0%, .6);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ancillary-header h1,
+.ancillary-header h2 {
+  color: hsl(0, 0%, 100%);
+  letter-spacing: .16em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ancillary-header h1 {
+  font-family: 'National Thin', sans-serif;
+}
+
+.ancillary-header h2 {
+  font-family: 'National Light', sans-serif;
+}
+
+.ancillary-header .back {
+  position: fixed !important;
+  color: hsl(0, 0%, 50%);
   text-align: center;
   padding: 0;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0,0,0);
 }
-.back i {
-  margin: 10px 0 0 0;
-}
-.back a {
+
+.ancillary-header .back a {
   text-decoration: none;
   color: inherit;
 }
-.back:hover {
-  background-color: #aaa;
-  color: #000;
-}
-.back:hover i {
-  opacity: .3;
+
+.ancillary-header .back:hover {
+  color: hsla(0, 0%, 50%, .8);
 }
 
-.date {
+@media (max-width: 640px) {
+  .ancillary-header .back {
+    position: absolute !important;
+  }
+}
+.ancillary {
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: lighter;
+  line-height: 1.75em;
+  margin: auto;
+  max-width: 940px;
+}
+
+.ancillary p {
+  margin: 1em 0;
+}
+
+.ancillary h1,
+.ancillary h2,
+.ancillary h3,
+.ancillary h4,
+.ancillary h5,
+.ancillary h6 {
+  font-weight: normal;
+  line-height: 1.4em;
+}
+
+.ancillary h1 {
+  font-size: 2.5em;
+}
+
+.ancillary h1,
+.ancillary h2 {
+  text-align: center;
+  margin: 85px 0 30px 0;
+}
+
+.ancillary h3 {
+  margin: 0 0 -15px 0;
+}
+
+.ancillary .date {
   text-align: center;
   text-transform: uppercase;
   display: block;
@@ -80,30 +200,17 @@ h3 {
   color: #aaa;
 }
 
-ul {
+.ancillary ul {
   padding: 0;
   list-style: lower-alpha;
 }
 
-ul ul {
+.ancillary ul ul {
   padding: 0 0 0 25px;
   list-style: lower-roman;
 }
 
-@media (max-width: 640px) {
-  .container {
-    max-width: 640px;
-    padding: 0 30px 0 30px;
-    margin: auto;
-  }
-  .back {
-    position: absolute;
-    background-color: #aaa;
-    color: #000;
-  }
-}
-
-a {
+.ancillary a {
   color: #000000;
 }
 .post-columns {
@@ -159,6 +266,10 @@ a {
 .post-columns article .text {
   color: hsl(180, 5%, 12%);
   font-family: 'Roboto Regular', sans-serif;
+}
+
+.post-columns article .text a {
+  color: hsl(260, 45%, 40%);
 }
 
 .post-columns .position-indicator {
@@ -232,23 +343,38 @@ a {
     border-top: 2px solid hsla(65, 8%, 69%, .2);
   }
 }
-</style><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/fonts.css"/><link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/><link rel="shortcut icon" href="https://passport.thegrid.io/favicon.ico"/><script type="text/javascript" src="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/dist/gss.min.gz.js"></script></head><body><div class="header"></div><a class="back" href="../"><i class="fa fa-arrow-left"></i></a><article class="container"><h1>The Grid Terms of Service</h1>
-<p>By using the TheGrid.io web site (&quot;Service&quot; or &quot;Services&quot;) or any services of The Grid, (&quot;The Grid&quot;), provided by Rituwall Inc., you are agreeing to be bound by the following terms and conditions (&quot;Terms of Service&quot; or &quot;Terms&quot;).  If you are entering into this agreement on behalf of a company, you represent that you have authority to bind such entity.</p>
+section.footer {
+  background-color: hsl(300, 4%, 16%);
+  border-top: 1px solid hsl(300, 4%, 10%);
+  margin-top: -1px;
+}
+
+section.footer a {
+  font-family: 'National Light';
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: hsl(354, 65%, 65%);
+  float: left;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 1em;
+  text-decoration: none;
+}
+</style><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/fonts.css"/><link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/><link rel="shortcut icon" href="https://passport.thegrid.io/favicon.ico"/><script type="text/javascript" src="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/dist/gss.min.gz.js"></script></head><body><section class="ancillary-header" style="position:relative;"><h2>AI Websites That Design Themselves</h2><h1>Join the Evolution</h1><a class="back" href="../"><i class="fa fa-arrow-left"></i></a></section><section class="ancillary" style="position:relative;"><h1>The Grid Terms of Service</h1>
+<p>By using the TheGrid.io web site (&quot;Service&quot; or &quot;Services&quot;) or any services of The Grid, (&quot;The Grid&quot;), provided by Rituwall Inc., you are agreeing to be bound by the following terms and conditions (&quot;Terms of Service&quot; or &quot;Terms&quot;). If you are entering into this agreement on behalf of a company, you represent that you have authority to bind such entity.</p>
 <h2>Account Terms</h2>
 <p>You must provide your name, a valid email address, and any other requested information in order to complete the signup process.</p>
 <p>You are responsible for maintaining the security of your account and password. The Grid will not be liable for any damage as a result of your failure to comply with this security obligation.</p>
 <p>You are responsible for all content posted and all activities that occurs under your account. You are also responsible for all content that is posted by and all activities occurred under those who have accounts under your account.</p>
 <p>You may not use the Service for any illegal or unauthorized purpose. You may not use the Service to, directly or indirectly, violate any laws in your jurisdiction.</p>
 <h2>API Terms</h2>
-<p>The use of the API, including use of the API through a third-party product that </p>
-<p>accesses The Grid, is bound by this Terms of Service.</p>
-<p>Excessively frequent requests to The Grid via the API may result</p>
-<p>in the temporary or permanent suspension of your account&#39;s access to the API. The Grid has sole discretion to determine excessive usage of the API. IN any case, The Grid will make a reasonable attempt via email to warn the account owner prior to suspension.</p>
-<p>The Grid reserves the right to, temporarily or permanently, modify or </p>
-<p>discontinue, at any time, your access to the API (or any part thereof) with or without notice.</p>
+<p>The use of the API, including use of the API through a third-party product that accesses The Grid, is bound by this Terms of Service.</p>
+<p>Excessively frequent requests to The Grid via the API may result in the temporary or permanent suspension of your account&#39;s access to the API. The Grid has sole discretion to determine excessive usage of the API. IN any case, The Grid will make a reasonable attempt via email to warn the account owner prior to suspension.</p>
+<p>The Grid reserves the right to, temporarily or permanently, modify or discontinue, at any time, your access to the API (or any part thereof) with or without notice.</p>
 <p>The Grid shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, such as damages for loss of profits, goodwill, use, data or other intangible losses, resulting from your use of the API or third-party products that access data via the API. </p>
 <h2>Payment, Refunds, Upgrading and Downgrading Terms</h2>
-<p>All paid plans must provide and maintain a valid payment information.</p>
+<p>All paid plans must provide and maintain valid payment information.</p>
 <p>Payments are non-refundable. For monthly payment plans, the Service is billed in advance on a monthly basis. </p>
 <p>When changing from a monthly billing cycle to a yearly billing cycle, The Grid will bill for a full year at the next monthly billing date.</p>
 <p>Founding Memberships is a pre-purchase of paid-plan wherein the Service is to be released at end of spring 2015. Details are subject to change.  Individuals are charged immediately at the time of the pre-purchase.</p>
@@ -265,16 +391,11 @@ a {
 <h2>Copyright and Content Ownership</h2>
 <p>Except granting a license to us to perform and promote The Grid&#39;s Service, you </p>
 <p>own your own content. we claim no intellectual property rights over the material you provide to the Service. Your profile and materials uploaded remain yours. However, by publishing you site, agree to allow others to view your content. In any case, we will not enable 3rd party advertisement on your content without your permission. </p>
-<p>The Grid does not pre-screen content, but The Grid and its designee have the </p>
-<p>right (but not the obligation), at their sole discretion, to refuse or remove any content that is available via the Service.</p>
-<p>You shall defend The Grid against any claim, demand, suit or proceeding </p>
-<p>made or brought against The Grid by a third-party alleging that your content or your use of the Service infringes or misappropriates the intellectual property rights of a third-party or violates applicable law.</p>
-<p>You shall also indemnify The Grid for any damages awarded against, and for </p>
-<p>reasonable attorneys fees incurred by, The Grid in connection with any claim, demand, suit or proceeding by a third-party alleging that your content or your use of the Service infringes or misappropriates the intellectual property rights of a third-party or violates applicable law. </p>
-<p>You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion </p>
-<p>of the Service, use of the Service, or access to the Service without the express written permission by The Grid.</p>
-<p>You grant The Grid a nonexclusive, irrevocable, worldwide, perpetual, </p>
-<p>unlimited, assignable, sublicenseable, fully paid up and royalty-free right to us to copy, prepare derivative works of, improve, distribute, publish, remove, retain, add, modify, process, analyze, use, in any way solely for the purpose to enhance, to perform and to promote The Grid Service.</p>
+<p>The Grid does not pre-screen content, but The Grid and its designee have the right (but not the obligation), at their sole discretion, to refuse or remove any content that is available via the Service.</p>
+<p>You shall defend The Grid against any claim, demand, suit or proceeding made or brought against The Grid by a third-party alleging that your content or your use of the Service infringes or misappropriates the intellectual property rights of a third-party or violates applicable law.</p>
+<p>You shall also indemnify The Grid for any damages awarded against, and for reasonable attorneyâ€™s fees incurred by, The Grid in connection with any claim, demand, suit or proceeding by a third-party alleging that your content or your use of the Service infringes or misappropriates the intellectual property rights of a third-party or violates applicable law. </p>
+<p>You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service without the express written permission by The Grid.</p>
+<p>You grant The Grid a nonexclusive, irrevocable, worldwide, perpetual, unlimited, assignable, sublicenseable, fully paid up and royalty-free right to us to copy, prepare derivative works of, improve, distribute, publish, remove, retain, add, modify, process, analyze, use, in any way solely for the purpose to enhance, to perform and to promote The Grid Service.</p>
 <h2>Notice</h2>
 <p>If The Grid makes any material changes to these Terms, we will notify you at least 14 days in advance by email or by posting a notice on our site before the changes are in effect. Any new features that expand or enhance the current Service shall be subject to the Terms of Service. Expansion or enhancements includes the release of new tools and resources. Your continued use of the Service after any such changes shall constitute your consent to such changes.</p>
 <h2>Violation</h2>
@@ -295,7 +416,7 @@ a {
 <p>The failure of The Grid to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitutes the entire agreement between you and The Grid and govern your use of the Service. The Terms of Service superseding any prior agreements between you and The Grid, including, but not limited to, any prior versions of the Terms of Service. </p>
 <p>You expressly understand and agree that The Grid shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses resulting from: (i) the use or the inability to use the service; (ii) unauthorized access to or alteration of your transmissions or data; (iii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into, through, or from the service; (iv) statements or conduct of any third-party on the service; or (v) any other matter relating to the service. The Grid is not liable even if it has been advised of the possibility of such damages.</p>
 <p>You agree that these Terms of Service and your use of the Service are governed under the Laws of the State of California and any dispute shall be adjudicated in the State of California.</p>
-<p>The Grid may interact with law enforcement regarding your use of the The Grid Services. You acknowledge and agree that The Grid may make your information available to law enforcement. The Grid requires valid legal process, such as a subpoena, court order, or search warrant, in order to produce records of non-public user information to U.S.-based law enforcement. ýThe Grid requires a search warrant issued under the procedures of the Federal Rules of Criminal Procedure or equivalent state warrant procedures to compel disclosure of the content of user communications.</p></article><style type="text/gss">section {
+<p>The Grid may interact with law enforcement regarding your use of the The Grid Services. You acknowledge and agree that The Grid may make your information available to law enforcement. The Grid requires valid legal process, such as a subpoena, court order, or search warrant, in order to produce records of non-public user information to U.S.-based law enforcement. The Grid requires a search warrant issued under the procedures of the Federal Rules of Criminal Procedure or equivalent state warrant procedures to compel disclosure of the content of user communications.</p></section><section class="footer" style="position: relative"><div class="content"><a href="./team/">Team</a><a href="./faq/">FAQ</a><a href="./pp/">Privacy Policy</a><a href="./tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><style type="text/gss">section {
   width: 100%;
   width: == ::window[width] !require;
   top: == 0 !require;
@@ -322,6 +443,7 @@ section.footer {
 
   .content {
     size: == &[intrinsic-size];
+    padding: 0 20px;
   }
 }
 
@@ -385,6 +507,58 @@ GSS BUG
   }
 }
 */
+.ancillary-header {
+  height: == &[intrinsic-height];
+  width: == ::window[width];
+  padding-top: == &[padding-bottom] == [base] * 5;
+
+  h1 {
+    margin-top: == [base];
+  }
+
+
+  .back {
+    font-size: == [base] * 3;
+    height: == &[intrinsic-height];
+  }
+
+  (& .back)[center-y] == &[center-y];
+
+
+  @if ::window[width] < 504 {
+    &[padding-left] == &[padding-right] == [base] * 4;
+
+    h1[font-size] == 32;
+    h2[font-size]  == 16;
+
+    @h |-(& .back) gap([base] * 2);
+  }
+  @else {
+    @if ::window[width] < 1008 {
+      h1[font-size] == 48;
+      h2[font-size]  == 20;
+    }
+    @else {
+      &[padding-left] == &[padding-right] == [base] * 11;
+
+      h1[font-size] == 64;
+      h2[font-size]  == 24;
+
+      @h |-(& .back) gap([base] * 3);
+    }
+  }
+}
+.ancillary {
+  height: == &[intrinsic-height];
+  padding-bottom: == [base] * 6;
+
+  @if ::window[width] < 504 {
+    padding-left: == &[padding-right] == [base] * 4;
+  }
+  @else {
+    padding-left: == &[padding-right] == [base] * 11;
+  }
+}
 
 .post-cols-footer {
   height: == 72 !require;
