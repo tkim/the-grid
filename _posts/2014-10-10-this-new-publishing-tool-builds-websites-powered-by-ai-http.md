@@ -42,7 +42,7 @@
   inLanguage: "English"
   app_links: []
   datePublished: "2014-10-10T02:42:08.174Z"
-  dateModified: "2014-10-14T16:57:37.212Z"
+  dateModified: "2014-10-15T10:32:22.353Z"
   published: true
   sourcePath: "_posts/2014-10-10-this-new-publishing-tool-builds-websites-powered-by-ai-http.md"
   _type: "Photograph"
