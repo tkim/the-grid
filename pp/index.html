@@ -407,7 +407,7 @@ If The Grid intends on using any Personal Data in any manner that is not consist
 <p>The Services and our business may change from time to time. As a result, at times it may be necessary for The Grid to make changes to this Privacy Policy. The Grid reserves the right to update or modify this Privacy Policy at any time and from time to time without prior notice. Please review this policy periodically, and especially before you provide any Personal Data. This Privacy Policy was last updated on the date indicated above. Your continued use of the Services after any changes or revisions to this Privacy Policy shall indicate your agreement with the terms of such revised Privacy Policy. </p>
 <h2>Access to Information; Contacting The Grid:</h2>
 <p>To keep your Personal Data accurate, current, and complete, please contact us as specified below. We will take reasonable steps to update or correct Personal Data in our possession that you have previously submitted via the Services. Please also feel free to contact us if you have any questions about The Grid&#39;s Privacy Policy or the information practices of the Services.</p>
-<p>You may contact us as follows: support@thegrid.io. </p></section><section class="footer" style="position: relative"><div class="content"><a href="./team/">Team</a><a href="./faq/">FAQ</a><a href="./pp/">Privacy Policy</a><a href="./tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><style type="text/gss">section {
+<p>You may contact us as follows: support@thegrid.io. </p></section><section class="footer" style="position: relative"><div class="content"><a href="/team/">Team</a><a href="/faq/">FAQ</a><a href="/pp/">Privacy Policy</a><a href="/tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><style type="text/gss">section {
   width: 100%;
   width: == ::window[width] !require;
   top: == 0 !require;
@@ -519,21 +519,21 @@ GSS BUG
   @if ::window[width] < 504 {
     &[padding-left] == &[padding-right] == [base] * 4;
 
-    h1[font-size] == 32;
-    h2[font-size]  == 16;
+    (& h1)[font-size] == 32;
+    (& h2)[font-size]  == 16;
 
     @h |-(& .back) gap([base] * 2);
   }
   @else {
     @if ::window[width] < 1008 {
-      h1[font-size] == 48;
-      h2[font-size]  == 20;
+      (& h1)[font-size] == 48;
+      (& h2)[font-size]  == 20;
     }
     @else {
       &[padding-left] == &[padding-right] == [base] * 11;
 
-      h1[font-size] == 64;
-      h2[font-size]  == 24;
+      (& h1)[font-size] == 64;
+      (& h2)[font-size]  == 24;
 
       @h |-(& .back) gap([base] * 3);
     }
