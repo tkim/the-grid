@@ -416,7 +416,7 @@ section.footer a {
 <p>The failure of The Grid to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitutes the entire agreement between you and The Grid and govern your use of the Service. The Terms of Service superseding any prior agreements between you and The Grid, including, but not limited to, any prior versions of the Terms of Service. </p>
 <p>You expressly understand and agree that The Grid shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses resulting from: (i) the use or the inability to use the service; (ii) unauthorized access to or alteration of your transmissions or data; (iii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into, through, or from the service; (iv) statements or conduct of any third-party on the service; or (v) any other matter relating to the service. The Grid is not liable even if it has been advised of the possibility of such damages.</p>
 <p>You agree that these Terms of Service and your use of the Service are governed under the Laws of the State of California and any dispute shall be adjudicated in the State of California.</p>
-<p>The Grid may interact with law enforcement regarding your use of the The Grid Services. You acknowledge and agree that The Grid may make your information available to law enforcement. The Grid requires valid legal process, such as a subpoena, court order, or search warrant, in order to produce records of non-public user information to U.S.-based law enforcement. The Grid requires a search warrant issued under the procedures of the Federal Rules of Criminal Procedure or equivalent state warrant procedures to compel disclosure of the content of user communications.</p></section><section class="footer" style="position: relative"><div class="content"><a href="./team/">Team</a><a href="./faq/">FAQ</a><a href="./pp/">Privacy Policy</a><a href="./tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><style type="text/gss">section {
+<p>The Grid may interact with law enforcement regarding your use of the The Grid Services. You acknowledge and agree that The Grid may make your information available to law enforcement. The Grid requires valid legal process, such as a subpoena, court order, or search warrant, in order to produce records of non-public user information to U.S.-based law enforcement. The Grid requires a search warrant issued under the procedures of the Federal Rules of Criminal Procedure or equivalent state warrant procedures to compel disclosure of the content of user communications.</p></section><section class="footer" style="position: relative"><div class="content"><a href="/team/">Team</a><a href="/faq/">FAQ</a><a href="/pp/">Privacy Policy</a><a href="/tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><style type="text/gss">section {
   width: 100%;
   width: == ::window[width] !require;
   top: == 0 !require;
@@ -528,21 +528,21 @@ GSS BUG
   @if ::window[width] < 504 {
     &[padding-left] == &[padding-right] == [base] * 4;
 
-    h1[font-size] == 32;
-    h2[font-size]  == 16;
+    (& h1)[font-size] == 32;
+    (& h2)[font-size]  == 16;
 
     @h |-(& .back) gap([base] * 2);
   }
   @else {
     @if ::window[width] < 1008 {
-      h1[font-size] == 48;
-      h2[font-size]  == 20;
+      (& h1)[font-size] == 48;
+      (& h2)[font-size]  == 20;
     }
     @else {
       &[padding-left] == &[padding-right] == [base] * 11;
 
-      h1[font-size] == 64;
-      h2[font-size]  == 24;
+      (& h1)[font-size] == 64;
+      (& h2)[font-size]  == 24;
 
       @h |-(& .back) gap([base] * 3);
     }
