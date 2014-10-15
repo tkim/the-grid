@@ -476,7 +476,7 @@ section.footer a {
 <h3>Are you hiring?</h3>
 <p>We&#39;re always on the hunt for talented and passionate individuals. Please forward inquiries to <a href="mailto:careers@thegrid.io">careers@thegrid.io</a>, or find us on one of our Github Repos.</p>
 <h3>What type of coffee should I bring to my interview?</h3>
-<p>Large with a dash of soy milk and sprinkle of cinnamon. Or simply black. </p></section><section class="footer" style="position: relative"><div class="content"><a href="./team/">Team</a><a href="./faq/">FAQ</a><a href="./pp/">Privacy Policy</a><a href="./tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><style type="text/gss">section {
+<p>Large with a dash of soy milk and sprinkle of cinnamon. Or simply black. </p></section><section class="footer" style="position: relative"><div class="content"><a href="/team/">Team</a><a href="/faq/">FAQ</a><a href="/pp/">Privacy Policy</a><a href="/tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><style type="text/gss">section {
   width: 100%;
   width: == ::window[width] !require;
   top: == 0 !require;
@@ -588,21 +588,21 @@ GSS BUG
   @if ::window[width] < 504 {
     &[padding-left] == &[padding-right] == [base] * 4;
 
-    h1[font-size] == 32;
-    h2[font-size]  == 16;
+    (& h1)[font-size] == 32;
+    (& h2)[font-size]  == 16;
 
     @h |-(& .back) gap([base] * 2);
   }
   @else {
     @if ::window[width] < 1008 {
-      h1[font-size] == 48;
-      h2[font-size]  == 20;
+      (& h1)[font-size] == 48;
+      (& h2)[font-size]  == 20;
     }
     @else {
       &[padding-left] == &[padding-right] == [base] * 11;
 
-      h1[font-size] == 64;
-      h2[font-size]  == 24;
+      (& h1)[font-size] == 64;
+      (& h2)[font-size]  == 24;
 
       @h |-(& .back) gap([base] * 3);
     }
