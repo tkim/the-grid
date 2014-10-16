@@ -41,7 +41,7 @@
     - "artificial"
     - "grid"
     - "twitter"
-  description: "http://www.wordlink.com/l/JCKa @phys &The Grid: Artificial intelligence as your personal graphic designer"
+  description: "http://www.wordlink.com/l/JCKa @phys and The Grid: Artificial intelligence as your personal graphic designer"
   inLanguage: "English"
   app_links: []
   isBasedOnUrl: "https://twitter.com/WordLinkTECH/status/520181897809645568"
@@ -52,4 +52,4 @@
   _context: "http://schema.org"
 
 ---
-![http://www.wordlink.com/l/JCKa @phys &The Grid: Artificial intelligence as your personal graphic designer](https://pbs.twimg.com/media/BzgOrgcIcAAXIoz.jpg:large)
+![http://www.wordlink.com/l/JCKa @phys and The Grid: Artificial intelligence as your personal graphic designer](https://pbs.twimg.com/media/BzgOrgcIcAAXIoz.jpg:large)
