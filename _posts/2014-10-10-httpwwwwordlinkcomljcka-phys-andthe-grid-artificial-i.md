@@ -46,8 +46,9 @@
   app_links: []
   isBasedOnUrl: "https://twitter.com/WordLinkTECH/status/520181897809645568"
   datePublished: "2014-10-10T02:35:29.162Z"
-  dateModified: "2014-10-10T02:35:29.162Z"
+  dateModified: "2014-10-16T13:52:41.162Z"
   published: true
+  sourcePath: "_posts/2014-10-10-httpwwwwordlinkcomljcka-phys-andthe-grid-artificial-i.md"
   _type: "Photograph"
   _context: "http://schema.org"
 
