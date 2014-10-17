@@ -5,8 +5,9 @@
   description: "On-Demand E-Commerce\nAdd products and a shopping cart magically appears, no plugins or configuration required. Remove the products and the shopping cart disappe"
   author: []
   datePublished: "2014-10-08T16:26:29.698Z"
-  dateModified: "2014-10-08T16:52:19.239Z"
+  dateModified: "2014-10-17T10:39:46.528Z"
   published: true
+  sourcePath: "_posts/2014-10-08-e-commerce.md"
   _context: "http://schema.org"
   _type: "Article"
 
