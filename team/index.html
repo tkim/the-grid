@@ -4,7 +4,6 @@
 
 html {
   background-color: hsl(210, 0%, 98%);
-  font-family: 'National Regular';
 }
 
 body {
@@ -91,6 +90,39 @@ iframe {
   border: 2px solid #fff;
   color: #fff;
 }
+
+
+/* Typography */
+
+html {
+  font-family: 'National Light';
+}
+
+section .heading {
+  font-family: 'National Thin';
+  letter-spacing: .16em;
+}
+
+section .title.alt {
+  letter-spacing: .16em;
+}
+
+section .subtitle {
+  letter-spacing: .16em;
+}
+
+section p,
+section ol,
+section ul,
+section .text {
+  letter-spacing: .05em;
+}
+
+section button,
+section .button {
+  font-family: 'National Medium';
+  letter-spacing: .16em;
+}
 .ancillary-header {
   background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/responsive.jpg');
   background-size: cover;
@@ -115,18 +147,9 @@ iframe {
 .ancillary-header h1,
 .ancillary-header h2 {
   color: hsl(0, 0%, 100%);
-  letter-spacing: .16em;
   position: relative;
   text-align: center;
   text-transform: uppercase;
-}
-
-.ancillary-header h1 {
-  font-family: 'National Thin', sans-serif;
-}
-
-.ancillary-header h2 {
-  font-family: 'National Light', sans-serif;
 }
 
 .ancillary-header .back {
@@ -153,15 +176,7 @@ iframe {
   }
 }
 .ancillary {
-  font-family: 'Roboto Light', sans-serif;
-  font-weight: lighter;
-  line-height: 1.75em;
-  margin: auto;
-  max-width: 940px;
-}
-
-.ancillary p {
-  margin: 1em 0;
+  color: hsl(15, 3%, 28%);
 }
 
 .ancillary h1,
@@ -170,48 +185,34 @@ iframe {
 .ancillary h4,
 .ancillary h5,
 .ancillary h6 {
-  font-weight: normal;
-  line-height: 1.4em;
-}
-
-.ancillary h1 {
-  font-size: 2.5em !important;
-}
-
-.ancillary h1,
-.ancillary h2 {
-  text-align: center;
-  margin: 85px 0 30px 0;
+  color: hsl(180, 5%, 12%);
 }
 
 .ancillary h3 {
-  margin: 0 0 -15px 0;
+  font-family: 'National Medium';
 }
 
-.ancillary .date {
-  text-align: center;
+.ancillary h4 {
+  font-family: 'National Medium';
   text-transform: uppercase;
-  display: block;
-  padding: 0 0 25px 0;
-  margin: 0 0 -25px 0;
-  border-bottom: 1px solid #aaa;
-  letter-spacing: 0.15em;
-  font-size: 0.8em;
-  color: #aaa;
 }
 
-.ancillary ul {
-  padding: 0;
-  list-style: lower-alpha;
-}
-
-.ancillary ul ul {
-  padding: 0 0 0 25px;
-  list-style: lower-roman;
+.ancillary h1 + p {
+  border-bottom: 1px solid hsl(240, 2%, 91%);
+  color: hsl(0, 0%, 70%);
+  text-transform: uppercase;
 }
 
 .ancillary a {
-  color: #000000;
+  color: hsl(0, 0%, 0%);
+}
+
+.ancillary ol {
+  list-style: lower-alpha;
+}
+
+.ancillary ol > ol {
+  list-style: lower-roman;
 }
 .post-columns {
   background-color: hsl(36, 33%, 94%);
@@ -224,7 +225,7 @@ iframe {
 }
 .post-cols-footer a {
   color: hsl(41, 47%, 62%);
-  font-family: 'National Light';
+  font-family: 'National Medium';
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-size: 20px;
@@ -235,10 +236,8 @@ iframe {
   left: 0;
   right: 0;
 }
-.post-columns .heading {
+.post-columns .title.main {
   color: hsl(255, 13%, 12%);
-  font-family: 'National Book';
-  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
@@ -251,21 +250,16 @@ iframe {
 
 .post-columns article .title {
   color: hsl(180, 5%, 12%);
-  font-family: 'National Light';
-  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
 .post-columns article .subtitle {
   color: hsl(41, 47%, 62%);
-  font-family: 'National Light';
-  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
 .post-columns article .text {
   color: hsl(180, 5%, 12%);
-  font-family: 'Roboto Regular', sans-serif;
 }
 
 .post-columns article .text a {
@@ -285,7 +279,7 @@ iframe {
     text-align: center;
   }
 
-  .post-columns .heading {
+  .post-columns .title.main {
     color: hsla(255, 13%, 12%, .6);
     position: absolute;
   }
@@ -302,7 +296,7 @@ iframe {
 
 @media (min-width: 504px) and (max-width: 1007px) {
 
-  .post-columns .heading {
+  .post-columns .title.main {
     color: hsla(255, 13%, 12%, .6);
     position: absolute;
   }
@@ -322,12 +316,12 @@ iframe {
     text-align: center;
   }
 
-  .post-columns .heading {
+  .post-columns .title.main {
     font-size: 34px;
     position: relative;
   }
 
-  .post-columns .heading:before {
+  .post-columns .title.main:before {
     background-color: hsl(65, 8%, 69%);
     content: "";
     display: block;
@@ -350,7 +344,7 @@ section.footer {
 }
 
 section.footer a {
-  font-family: 'National Light';
+  font-family: 'National Medium';
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: hsl(354, 65%, 65%);
@@ -361,7 +355,7 @@ section.footer a {
   margin: 1em;
   text-decoration: none;
 }
-</style><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Bold.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Book.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Light-Italic.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Light.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Medium.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Regular.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Thin.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/Roboto/Roboto-Light.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/Roboto/Roboto-Regular.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/Roboto/Roboto-Thin.css"/><link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/><link rel="shortcut icon" href="https://passport.thegrid.io/favicon.ico"/><script type="text/javascript" src="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/dist/gss.min.gz.js"></script></head><body><section class="ancillary-header" style="position:relative;"><h2>AI Websites That Design Themselves</h2><h1>Join the Evolution</h1><a class="back" href="../"><i class="fa fa-arrow-left"></i></a></section><section class="post-columns" style="position:relative;"><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><h1 class="heading">The Team</h1><div class="content"><div class="posts large"><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/63f1fbee3c6aa721e813980af38782c7/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FHenri.png');"></div><h1 class="title">Henri Bergius</h1><h2 class="subtitle">VP Engineering</h2><p class="text">Henri is an open source content management pioneer. He is the author of the Create.js web editing interface and the NoFlo flow-based programming environment that powers The Grid.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/da7dbef75a1a8990dddcf44a7a05306c/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FDan.png');"></div><h1 class="title">Dan Tocchini</h1><h2 class="subtitle">Founder and CEO</h2><p class="text">Creator of GSS (Grid Style Sheets) and Partner of D4 Interactive Agency. Producing interactive works for Audi, Microsoft and more.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/34d72b466bb1afaea60fe7052c4760b9/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FLeigh.png');"></div><h1 class="title">Leigh Taylor</h1><h2 class="subtitle">Creative Director</h2><p class="text">Leigh was the first dedicated designer for Obvious Corp, designed arguably the best blog post editor on the web today, now known as Medium.</p></article></div><div class="posts small"><div class="divider"></div><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/447772a51e47ab96938e5501dc2b480d/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FBrian.png');"></div><h1 class="title">Brian Axe</h1><h2 class="subtitle">Chairman / Founder</h2><p class="text">One of the creators of Google AdSense, built the business from zero to $2B in annual revenue.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/62370708716e0d6ac8861c1f60c593a9/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FSvetly.png');"></div><h1 class="title">Svetly Metodiev</h1><h2 class="subtitle">Director of Finance & Operations</h2><p class="text">Svetly is an experienced business analyst with a background in finance, formerly with Credit Suisse.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0c42eaa8e698621d1bc4158e92828f23/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FForrest.png');"></div><h1 class="title">Forrest Oliphant</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Forrest has been experimenting with web media software for 15 years. He created Meemoo, a playful dataflow animation webapp designed for hackability.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e52765b5d951d2656405b21bbbd29817/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FJon.png');"></div><h1 class="title">Jon Nordby</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Jon is a specialist in Linux and embedded devices. He has researched GPU computing for CERN and consulted for Canonical, Nokia and One Laptop Per Child. Creator of MicroFlo, a dataflow runtime for microcontrollers.</p></article></div><div class="posts small"><div class="divider"></div><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8fb460d68d532018c6c6cfc6e81db9bf/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FMoritz.png');"></div><h1 class="title">Moritz Krog</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Moritz Krog is an experienced full-stack developer with a background in computational biology.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/508f32ce40479f88f7d5100d2344f551/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FYaroslaff.png');"></div><h1 class="title">Yaroslaff Fedin</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Enthusiast of dynamic interfaces and declarative programming. Virtual machinist.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3e7942aebbab5db304bdec44e4680532/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FVladimir.png');"></div><h1 class="title">Vladimir Sibirov</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Vladimir is an expert in open source content management, dataflow backends and web frameworks. He wrote code for several European startups and led web development for brands like MasterCard, Nestle and Mars.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e66bb753725c90b74b89ba1332cb4734/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FVilson.png');"></div><h1 class="title">Vilson Vieira</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Vilson is a code artist and open source enthusiast. He has researched computational creativity for University of Sao Paulo. He co-created MuSA and LabMacambira collectives and has been developing for Meemoo, Mozilla and Google.</p></article></div><div class="posts small"><div class="divider"></div><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/6a08196bca45ecc0e2a2450cae139c47/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FJeff.png');"></div><h1 class="title">Jeff Woods</h1><h2 class="subtitle">Community Evangelist</h2><p class="text">Jeff is a nationally recognized commercial photographer with passion to equip small businesses with the tools needed to grow in todays marketplace. He has been a featured speaker for Canon and Adobe and has presented seminars on design, business marketing and photography throughout China, Brazil, Ireland, Canada and US.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8fa174b8b07dd6365df555c9d25abd2e/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FPaul.png');"></div><h1 class="title">Paul Young</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Helped build the platform that powers loyalty for companies like Pepsi, Sony Music, L'Oreal, and Nestle. Passionate about making beautiful products from the inside out.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/b8cbe556c0c92dc6ab3e408918f499f8/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2F_spare.png');"></div><h1 class="title">You?</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Got the right stuff? Get in touch at <a href="mailto:careers@thegrid.io" target="_blank">careers@thegrid.io</a></p></article></div></div><div class="footer"></div></section><section class="footer" style="position: relative"><div class="content"><a href="/team/">Team</a><a href="/faq/">FAQ</a><a href="/pp/">Privacy Policy</a><a href="/tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><style type="text/gss">section {
+</style><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Light.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Medium.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Thin.css"/><link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/><link rel="shortcut icon" href="https://passport.thegrid.io/favicon.ico"/><script type="text/javascript" src="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/dist/gss.min.gz.js"></script></head><body><style type="text/gss" scoped="scoped">section {
   width: 100%;
   width: == ::window[width] !require;
   top: == 0 !require;
@@ -494,26 +488,80 @@ GSS BUG
   }
 }
 .ancillary {
+  max-width: == ([md] * 11) + &[padding-left] + &[padding-right];
   height: == &[intrinsic-height];
-  padding-bottom: == [base] * 6;
+  center-x: == ::window[center-x];
 
   @if ::window[width] < 504 {
     padding-left: == &[padding-right] == [base] * 4;
+    padding-top: == &[padding-bottom] == [base] * 6;
   }
   @else {
     padding-left: == &[padding-right] == [base] * 11;
+    padding-top: == &[padding-bottom] == [base] * 13;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: == &[font-size];
+  }
+
+  p,
+  ol,
+  ul {
+    line-height: == &[font-size] + [base];
+  }
+
+  h1 {
+    font-size: == 54;
+  }
+
+  h3 {
+    font-size: == 32;
+    margin-top: == [base] * 11;
+  }
+
+  h4 {
+    font-size: == 20;
+    margin-top: == [base] * 4;
+  }
+
+  p,
+  ol,
+  ul {
+    font-size: == 20;
+    margin-top: == [base] * 5;
+  }
+
+  h1 + p {
+    margin-top: == [base] * 3;
+    padding-bottom: == [base] * 4;
+  }
+
+  h4 + p,
+  h4 + ol,
+  h4 + ul {
+    margin-top: == [base] * 2;
+  }
+
+  ol > ol {
+    padding-left: == [base] * 3;
   }
 }
 
 .post-cols-footer {
   height: == 72 !require;
-  
-  (& a)[line-height] == &[height]; 
-  
+
+  (& a)[line-height] == &[height];
+
 }
 
 .post-columns {
-  
+
   .media {
     width: == &[height];
   }
@@ -522,15 +570,15 @@ GSS BUG
     @h |(&)| in(::window);
     height: == ::window[height];
 
-    .heading {
+    .title.main {
       font-size: == 16 !require;
       height: == &[intrinsic-height];
     }
 
-    @v |-(& .heading)-(& .media) in(&) gap(&[heading-media-v-gap]);
+    @v |-(& .title.main)-(& .media) in(&) gap(&[main-title-media-v-gap]);
     @v (& .content)| in(&);
 
-    @h |-(& .heading)-| in(&) gap([base] * 5);
+    @h |-(& .title.main)-| in(&) gap([base] * 5);
     @h |(& .content)| in(&);
 
     (& .content)[width] == (& article)[width] == &[width];
@@ -592,12 +640,12 @@ GSS BUG
       @h |(&)| in(::window);
       height: == ::window[height];
 
-      .heading {
+      .title.main {
         font-size: == 16 !require;
         height: == &[intrinsic-height];
       }
 
-      @h |-(& .heading) in(&) gap([base] * 4);
+      @h |-(& .title.main) in(&) gap([base] * 4);
 
       @h |(& .content)| in(&);
       @v |(& .content)| in(&);
@@ -614,10 +662,10 @@ GSS BUG
 
 
       &"text"[center-y] == &[center-y];
-      @v |(& .heading) in(&"text");
-      &[heading-bottom] == (& .heading)[bottom];
+      @v |(& .title.main) in(&"text");
+      &[main-title-bottom] == (& .title.main)[bottom];
 
-      @v <&[heading-bottom]>(& .title)(& .subtitle)~-~| in(&"text") gap(0);
+      @v <&[main-title-bottom]>(& .title)(& .subtitle)~-~| in(&"text") gap(0);
 
 
       @v |(& article)| in(& .content);
@@ -664,7 +712,7 @@ GSS BUG
       }
     }
     @else {
-      .heading {
+      .title.main {
         height: == &[intrinsic-height];
         padding-top: == [base] * 5;
       }
@@ -674,8 +722,8 @@ GSS BUG
 
       [post-column-v-gap] == [base] * 10;
 
-      @h |-(& .heading)-| in(&) gap([post-column-h-gap]);
-      @v |-(& .heading)-(& .posts)-...~-~| in(&) gap([post-column-v-gap]);
+      @h |-(& .title.main)-| in(&) gap([post-column-h-gap]);
+      @v |-(& .title.main)-(& .posts)-...~-~| in(&) gap([post-column-v-gap]);
 
       @h |~-~(& .posts)~-~| in(&) gap(0);
       (& .posts)[center-x] == &[center-x];
@@ -708,7 +756,7 @@ GSS BUG
             }
 
             .text {
-              font-size: == 18;
+              font-size: == 20;
               line-height: == 32;
               margin-top: == ([base] * 3) - 16;
             }
@@ -748,7 +796,7 @@ GSS BUG
     }
   }
 }
-</style><script>window.engine = GSS(document, {
+</style><section class="ancillary-header" style="position:relative;"><h2 class="subtitle">AI Websites That Design Themselves</h2><h1 class="heading">Join the Evolution</h1><a class="back" href="../"><i class="fa fa-arrow-left"></i></a></section><section class="post-columns" style="position:relative;"><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><div class="position-indicator"></div><h1 class="title main alt">The Team</h1><div class="content"><div class="posts large"><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/63f1fbee3c6aa721e813980af38782c7/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FHenri.png');"></div><h1 class="title alt">Henri Bergius</h1><h2 class="subtitle">VP Engineering</h2><p class="text">Henri is an open source content management pioneer. He is the author of the Create.js web editing interface and the NoFlo flow-based programming environment that powers The Grid.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/da7dbef75a1a8990dddcf44a7a05306c/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FDan.png');"></div><h1 class="title alt">Dan Tocchini</h1><h2 class="subtitle">Founder and CEO</h2><p class="text">Creator of GSS (Grid Style Sheets) and Partner of D4 Interactive Agency. Producing interactive works for Audi, Microsoft and more.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/34d72b466bb1afaea60fe7052c4760b9/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FLeigh.png');"></div><h1 class="title alt">Leigh Taylor</h1><h2 class="subtitle">Creative Director</h2><p class="text">Leigh was the first dedicated designer for Obvious Corp, designed arguably the best blog post editor on the web today, now known as Medium.</p></article></div><div class="posts small"><div class="divider"></div><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/447772a51e47ab96938e5501dc2b480d/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FBrian.png');"></div><h1 class="title alt">Brian Axe</h1><h2 class="subtitle">Chairman / Founder</h2><p class="text">One of the creators of Google AdSense, built the business from zero to $2B in annual revenue.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/62370708716e0d6ac8861c1f60c593a9/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FSvetly.png');"></div><h1 class="title alt">Svetly Metodiev</h1><h2 class="subtitle">Director of Finance & Operations</h2><p class="text">Svetly is an experienced business analyst with a background in finance, formerly with Credit Suisse.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0c42eaa8e698621d1bc4158e92828f23/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FForrest.png');"></div><h1 class="title alt">Forrest Oliphant</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Forrest has been experimenting with web media software for 15 years. He created Meemoo, a playful dataflow animation webapp designed for hackability.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e52765b5d951d2656405b21bbbd29817/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FJon.png');"></div><h1 class="title alt">Jon Nordby</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Jon is a specialist in Linux and embedded devices. He has researched GPU computing for CERN and consulted for Canonical, Nokia and One Laptop Per Child. Creator of MicroFlo, a dataflow runtime for microcontrollers.</p></article></div><div class="posts small"><div class="divider"></div><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8fb460d68d532018c6c6cfc6e81db9bf/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FMoritz.png');"></div><h1 class="title alt">Moritz Krog</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Moritz Krog is an experienced full-stack developer with a background in computational biology.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/508f32ce40479f88f7d5100d2344f551/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FYaroslaff.png');"></div><h1 class="title alt">Yaroslaff Fedin</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Enthusiast of dynamic interfaces and declarative programming. Virtual machinist.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3e7942aebbab5db304bdec44e4680532/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FVladimir.png');"></div><h1 class="title alt">Vladimir Sibirov</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Vladimir is an expert in open source content management, dataflow backends and web frameworks. He wrote code for several European startups and led web development for brands like MasterCard, Nestle and Mars.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e66bb753725c90b74b89ba1332cb4734/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FVilson.png');"></div><h1 class="title alt">Vilson Vieira</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Vilson is a code artist and open source enthusiast. He has researched computational creativity for University of Sao Paulo. He co-created MuSA and LabMacambira collectives and has been developing for Meemoo, Mozilla and Google.</p></article></div><div class="posts small"><div class="divider"></div><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/6a08196bca45ecc0e2a2450cae139c47/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FJeff.png');"></div><h1 class="title alt">Jeff Woods</h1><h2 class="subtitle">Community Evangelist</h2><p class="text">Jeff is a nationally recognized commercial photographer with passion to equip small businesses with the tools needed to grow in todays marketplace. He has been a featured speaker for Canon and Adobe and has presented seminars on design, business marketing and photography throughout China, Brazil, Ireland, Canada and US.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/8fa174b8b07dd6365df555c9d25abd2e/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2FPaul.png');"></div><h1 class="title alt">Paul Young</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Helped build the platform that powers loyalty for companies like Pepsi, Sony Music, L'Oreal, and Nestle. Passionate about making beautiful products from the inside out.</p></article><article><div class="media" style="background-image:url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/b8cbe556c0c92dc6ab3e408918f499f8/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fteam%2F_spare.png');"></div><h1 class="title alt">You?</h1><h2 class="subtitle">Software Engineer</h2><p class="text">Got the right stuff? Get in touch at <a href="mailto:careers@thegrid.io" target="_blank">careers@thegrid.io</a></p></article></div></div><div class="footer"></div></section><section class="footer" style="position: relative"><div class="content"><a href="/team/">Team</a><a href="/faq/">FAQ</a><a href="/pp/">Privacy Policy</a><a href="/tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><script>window.engine = GSS(document, {
   "md": 72,
   "-md": -72,
   "-md-2": -36,
