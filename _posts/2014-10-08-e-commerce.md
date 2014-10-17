@@ -11,7 +11,9 @@
   _type: "Article"
 
 ---
-# On-Demand E-Commerce
+# Set Up Shop In Seconds
 
-Add products and a shopping cart magically appears, no plugins or configuration required. Remove the products and the shopping cart disappears. No explanations necessary.
+## On-Demand E-Commerce
+
+Setting up shop online is too much work with all the management, databases, checkouts and security. Our AI removes the need for plugins, configuration and constant stress. Have a product, add a price and a shopping cart magically appears on your site. Just like that, just as it should be! 
 ![](https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/posts/Products-mmmm.jpg)
